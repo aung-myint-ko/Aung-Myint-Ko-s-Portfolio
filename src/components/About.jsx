@@ -4,7 +4,7 @@ function About() {
   return (
     <div
       id="about"
-      className="about px-4 sm:px-16 md:px-24 pb-20 sm:pt-20 sm:pb-20 lg:flex lg:flex-row-reverse lg:items-center "
+      className="about px-4 sm:px-16 md:px-24 pb-20 sm:pt-20 lg:flex lg:flex-row-reverse lg:items-center "
     >
       <div
         data-aos="fade-up"
@@ -46,8 +46,8 @@ function About() {
             become MERN stack developer.
           </p>
           <a
-            href="../asset/amk-resume.pdf"
-            download={"resume.pdf"}
+            href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:93196cce-b721-4370-a63a-c0e35c338aa5"
+            target={"_blank"}
             data-aos="fade-up"
             className="button"
           >
