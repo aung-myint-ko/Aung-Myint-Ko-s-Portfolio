@@ -78,7 +78,7 @@ function Header() {
             </Link>
           </li>
           <li className="flex justify-center link">
-            <Link to="about" spy={true} offset={-50}>
+            <Link to="about" spy={true} offset={-80}>
               <i class="uil uil-user-circle text-xl"></i>
             </Link>
           </li>
