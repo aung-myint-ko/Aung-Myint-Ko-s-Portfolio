@@ -45,7 +45,7 @@ function TechnicalSkill() {
   return (
     <div
       id="skills"
-      className=" px-4 sm:px-14 lg:px-24 pb-10 sm:pb-28 z-0 overflow-y-hidden "
+      className=" px-4 sm:px-14 lg:px-24 pb-16 sm:pb-20 z-0 overflow-y-hidden "
     >
       <h1
         data-aos="fade-up"

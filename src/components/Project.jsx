@@ -48,7 +48,7 @@ const ProjectsData = [
 
 function Project(props) {
   return (
-    <div id="projects" className="pb-10 sm:pb-36">
+    <div id="projects" className="pb-16 sm:pb-36">
       <div className=" px-4 sm:px-16 md:px-24 overflow-y-hidden">
         <h1
           data-aos="fade-up"

@@ -5,9 +5,9 @@ function Home() {
   return (
     <div
       id="home"
-      className="home px-4 sm:px-16 md:px-24 py-10 sm:py-0 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:items-center "
+      className="home px-4 sm:px-16 md:px-24 pt-14 pb-20 sm:py-0 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:items-center "
     >
-      <div data-aos="fade-up" className="  mb-5 lg:mb-0 -z-10">
+      <div data-aos="fade-up" className=" mb-9 lg:mb-0 -z-10">
         <img className="vector mx-auto " src="/images/vector.png" alt="" />
       </div>
       <div data-aos="fade-up">

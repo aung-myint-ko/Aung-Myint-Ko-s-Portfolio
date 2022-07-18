@@ -3,7 +3,7 @@ import { EduCard } from "./Card";
 
 function Qualification(props) {
   return (
-    <div className=" px-4 sm:px-16 md:px-24 pb-10 sm:pb-20 overflow-y-hidden">
+    <div className=" px-4 sm:px-16 md:px-24 pb-16 sm:pb-20 overflow-y-hidden">
       <h1
         data-aos="fade-up"
         className="purple font-semibold text-3xl lg:text-4xl mb-3 sm:mb-4"

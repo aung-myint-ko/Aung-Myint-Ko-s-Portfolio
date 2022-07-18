@@ -48,7 +48,7 @@ function Header() {
             className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
             to="projects"
             spy={true}
-            offset={-120}
+            offset={-100}
           >
             Projects
           </Link>
