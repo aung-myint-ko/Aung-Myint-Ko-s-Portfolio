@@ -44,6 +44,19 @@ const ProjectsData = [
     ],
     url: "https://artisan-bakery.netlify.app/",
   },
+  {
+    id: 4,
+    image: "/images/project4.png",
+    title: "Los Pollos Fast Food",
+    icons: [
+      "/images/nextjs.png",
+      "/images/sanity.png",
+      "/images/tailwindcss.png",
+      "/images/redux.jpeg",
+    ],
+
+    url: "https://los-pollos.vercel.app/",
+  },
 ];
 
 function Project(props) {
