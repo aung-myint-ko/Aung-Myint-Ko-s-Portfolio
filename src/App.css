@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -8,11 +8,12 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Port Lligat Slab", serif;
+  font-family: "Montserrat", sans-serif;
 }
 :root {
-  --purplePale: #544591f1;
-  --purple: #3f346c;
+  --purplePale: #2b0080;
+  --purplePale2: #a6a1c0;
+  --purple: #220066;
   --black: black;
   --white: white;
 }
@@ -24,17 +25,18 @@ html {
 }
 
 .icon:hover {
-  color: #a6a1c0;
+  color: var(--purplePale2);
 }
 .button {
   background-color: var(--purple);
   color: var(--white);
-  padding: 8px;
-  border-radius: 3px;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .button:hover {
   background-color: var(--purplePale);
+  box-shadow: 0 5px 6px -1px rgb(0 0 0 / 0.2), 0 3px 4px -2px rgb(0 0 0 / 0.2);
 }
 .link .active {
   color: var(--purplePale);
@@ -59,85 +61,38 @@ html {
     transform: translateX(-10px);
   }
 }
-/* progress circle animation */
-.outer {
-  box-shadow: -8px -3px 9px rgba(0, 0, 0, 0.068),
-    5px 5px 12px rgba(0, 0, 0, 0.4);
-}
-.inner {
-  box-shadow: inset -8px -3px 9px rgba(0, 0, 0, 0.06),
-    inset 5px 0px 12px rgba(0, 0, 0, 0.3);
-}
-svg {
-  height: 64px;
-  width: 64px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-}
-.circle1 {
-  display: none;
-}
-.circle2 {
-  fill: none;
-  stroke-width: 6px;
-  stroke: var(--purple);
-  stroke-dasharray: 178;
-  stroke-linecap: round;
-  animation: mobile-process 2s linear forwards;
-}
-@keyframes mobile-process {
-  to {
-    stroke-dashoffset: 19.8;
-  }
-  from {
-    stroke-dashoffset: 178;
-  }
-}
-.skillcard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--purple);
-  border: 2px solid var(--purple);
-}
-.skillcard .img {
-  width: 30%;
-  height: 70%;
-}
-.progress-done {
-  background: linear-gradient(to right, #4d30c4, var(--purple));
-  box-shadow: 0 3px 3px -5px #4d30c4, 0 2px 5px #4d30c4;
-  border-radius: 20px;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 0;
-  opacity: 0;
-  transition: 1s ease 0.3s;
-}
+
 .swiper {
   width: 100%;
   height: 100%;
+  padding-top: 50px !important;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
   color: black;
-  font-size: 20px !important;
+  font-size: 10px !important;
   font-weight: bold !important;
 }
+.swiper-button-next,
 .swiper-button-prev {
-  left: 0px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  top: 0 !important;
+  left: auto !important;
+  margin: 0 !important;
+  background-color: var(--purplePale2);
 }
-.swiper-button-next {
-  right: 0px !important;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  box-shadow: 0 5px 6px -1px rgb(0 0 0 / 0.2), 0 3px 4px -2px rgb(0 0 0 / 0.2) !important;
 }
 .swiper-pagination {
   bottom: 0px !important;
+}
+svg {
+  height: 35px !important;
+  width: 35px !important;
 }
 @media (min-width: 640px) {
   .navs .nav_links {
@@ -158,41 +113,22 @@ svg {
   .navs .nav_links.active::before {
     width: 100% !important;
   }
+  .swiper-button-prev {
+    right: 70px !important;
+  }
+  .swiper-button-next {
+    right: 0 !important;
+  }
+  svg {
+    height: 25px !important;
+    width: 25px !important;
+  }
 }
 
 @media (min-width: 768px) {
-  svg {
-    height: 160px;
-    width: 160px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-  }
-  .circle2 {
-    display: none;
-  }
-  .circle1 {
-    display: block;
-    fill: none;
-    stroke-width: 20px;
-    stroke: var(--purple);
-    stroke-dasharray: 437;
-    stroke-linecap: round;
-    animation: process 2s linear forwards;
-  }
-  @keyframes process {
-    to {
-      stroke-dashoffset: 43.7;
-    }
-    from {
-      stroke-dashoffset: 437;
-    }
-  }
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 30px !important;
+    font-size: 20px !important;
     font-weight: bold !important;
   }
 }

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, animateScroll as Scroll } from "react-scroll";
+import { CgProfile, CgHomeAlt, CgWebsite } from "react-icons/cg";
 
 function Header() {
   const HandleClick = () => {
@@ -21,80 +22,67 @@ function Header() {
 
         <ul className="navs p-4 shadow sm:static sm:w-fit sm:flex sm:shadow-none z-10">
           <Link
-            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
+            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-base sm:font-semibold nav_links"
             to="home"
             spy={true}
-            offset={-100}
+            offset={-80}
           >
             Home
           </Link>
           <Link
-            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
+            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-base sm:font-semibold nav_links"
             to="about"
             spy={true}
-            offset={-100}
+            offset={-20}
           >
             About
           </Link>
           <Link
-            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
+            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-base sm:font-semibold nav_links"
             to="skills"
             spy={true}
-            offset={-100}
+            offset={-20}
           >
             Skills
           </Link>
           <Link
-            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
+            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-base sm:font-semibold nav_links"
             to="projects"
             spy={true}
-            offset={-100}
+            offset={-20}
           >
             Projects
-          </Link>
-          <Link
-            className="mb-2 sm:mb-0 sm:ml-5 md:ml-8 sm:text-xl nav_links"
-            to="contact"
-            spy={true}
-            offset={-80}
-          >
-            Contact
           </Link>
         </ul>
       </div>
 
-      <div className=" sm:hidden">
+      <div className=" sm:hidden sticky  top-0 left-0 z-50">
         <div
           id="nav"
-          className="px-4 py-2 border-b cursor-pointer"
+          className="flex justify-between items-center bg-white px-4 py-2 border-b cursor-pointer"
           onClick={HandleClick}
         >
+          <h1 className="text-3xl font-bold tracking-widest	">L96</h1>
           <img className="w-14 h-14 " src="/images/Logo.png" alt="" />
         </div>
-        <ul className=" p-2 shadow border-t fixed bottom-3 left-1/2 -translate-x-1/2 w-5/6 bg-purple-50 rounded-md z-50 grid grid-cols-5">
+        <ul className=" p-3 shadow border-t fixed bottom-0 left-1/2 -translate-x-1/2 w-full bg-purple-50 rounded-md z-50 grid grid-cols-3">
           <li className="flex justify-center link">
-            <Link to="nav" spy={true} offset={0}>
-              <i class="uil uil-estate text-xl"></i>
+            <Link to="home" spy={true} offset={-73}>
+              <CgHomeAlt size={22} className={"mx-auto"} />
+              <p className="text-xs font-semibold text-center">Home</p>
             </Link>
           </li>
           <li className="flex justify-center link">
-            <Link to="about" spy={true} offset={-80}>
-              <i class="uil uil-user-circle text-xl"></i>
+            <Link to="about" spy={true} offset={-73}>
+              <CgProfile size={22} className={"mx-auto"} />
+              <p className="text-xs font-semibold">About</p>
             </Link>
           </li>
+
           <li className="flex justify-center link">
-            <Link to="skills" spy={true} offset={-20}>
-              <i class="uil uil-lightbulb-alt text-xl"></i>
-            </Link>
-          </li>
-          <li className="flex justify-center link">
-            <Link to="projects" spy={true} offset={-20}>
-              <i class="uil uil-browser text-xl"></i>
-            </Link>
-          </li>
-          <li className="flex justify-center link">
-            <Link to="contact" spy={true} offset={0}>
-              <i class="uil uil-message text-xl"></i>
+            <Link to="projects" spy={true} offset={-73}>
+              <CgWebsite size={22} className={"mx-auto"} />
+              <p className="text-xs font-semibold">Projects</p>
             </Link>
           </li>
         </ul>

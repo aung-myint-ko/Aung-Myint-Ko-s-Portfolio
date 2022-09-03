@@ -5,24 +5,41 @@ function Home() {
   return (
     <div
       id="home"
-      className="home px-4 sm:px-16 md:px-24 pt-14 pb-28 sm:py-0 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:items-center "
+      className=" bg-slate-50 min-h-[760px] lg:min-h-[542px] px-4 sm:px-16 md:px-24 py-20 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-20 lg:items-center overflow-hidden "
     >
-      <div data-aos="fade-up" className=" mb-9 lg:mb-0 -z-10">
-        <img className="vector mx-auto " src="/images/vector.png" alt="" />
+      <div className="max-w-xs lg:max-w-sm mx-auto z-10">
+        <img
+          className="vector w-full h-full  "
+          src="/images/untitled.png"
+          alt=""
+        />
       </div>
-      <div data-aos="fade-up">
-        <p className="mb-1 md:mb-2 purple text-2xl sm:text-4xl font-semibold ">
-          Hello,
+      <div>
+        <p
+          data-aos="fade-up"
+          className="mb-4 sm:mb-5 purple text-2xl sm:text-3xl font-black  "
+        >
+          Hello, I'm
         </p>
-        <h1 className=" mb-2 md:mb-3 text-4xl sm:text-6xl font-extrabold">
-          I'm Aung Myint Ko
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="50"
+          className=" mb-5 text-4xl sm:text-5xl font-extrabold"
+        >
+          Aung Myint Ko
         </h1>
-        <p className="mb-2 md:mb-3 text-xl sm:text-3xl ">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="mb-8 text-lg sm:text-2xl "
+        >
           Frontend Web Developer, <br /> Based in Myanmar
         </p>
-        <Link to="about" className="button ">
-          Read More
-        </Link>
+        <div data-aos="fade-up" data-aos-delay="150">
+          <Link to="about" spy={true} offset={-73} className="button ">
+            Read More
+          </Link>
+        </div>
       </div>
     </div>
   );

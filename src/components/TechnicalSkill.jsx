@@ -1,73 +1,46 @@
 import React from "react";
-import Circle from "./Circle";
-import SkillCard from "./SkillCard";
+import Marquee from "react-fast-marquee";
 
-const mainSkillsImage = [
-  { id: 1, image: "/images/reactjs.png" },
-  { id: 2, image: "/images/redux.jpeg" },
-  { id: 3, image: "/images/javascript.png" },
-  { id: 4, image: "/images/nextjs.png" },
-];
 const skillsImage = [
-  {
-    id: 1,
-    name: "HTML & CSS",
-    image: "/images/html-css.jpg",
-  },
-  {
-    id: 2,
-    name: "Tailwind CSS",
-    image: "/images/tailwindcss.png",
-  },
-  {
-    id: 3,
-    name: "Bootstrap",
-    image: "/images/bootstrap.png",
-  },
-  {
-    id: 4,
-    name: "jQuery",
-    image: "/images/jquery.png",
-  },
-  {
-    id: 5,
-    name: "Figma",
-    image: "/images/figma.png",
-  },
-  {
-    id: 6,
-    name: "Typescript",
-    image: "/images/typescript.png",
-  },
+  { id: 3, image: "/images/javascript.png", title: "Javascript" },
+  { id: 1, image: "/images/react.png", title: "React" },
+  { id: 2, image: "/images/redux.png", title: "Redux" },
+  { id: 4, image: "/images/nextjs.png", title: "Nextjs" },
+  { id: 6, image: "/images/nodeJs.png", title: "Nodejs" },
+  { id: 7, image: "/images/express.png", title: "Express" },
+  { id: 8, image: "/images/mongodb.png", title: "Mongodb" },
+  { id: 5, image: "/images/jquery.png", title: "Jquery" },
+  { id: 12, image: "/images/typescript.png", title: "Typescript" },
+  { id: 9, image: "/images/bootstrap.png", title: "Bootstrap" },
+  { id: 10, image: "/images/tailwindcss.png", title: "Tailwindcss" },
+  { id: 11, image: "/images/figma.png", title: "Figma" },
+  { id: 13, image: "/images/git.png", title: "Git" },
 ];
 
 function TechnicalSkill() {
   return (
-    <div
-      id="skills"
-      className=" px-4 sm:px-14 lg:px-24 pb-16 sm:pb-20 z-0 overflow-y-hidden "
-    >
-      <h1
-        data-aos="fade-up"
-        class="purple text-center font-semibold text-3xl lg:text-4xl mb-5 sm:mb-9"
-      >
+    <div className=" px-4 sm:px-14 lg:px-24 py-8 sm:pt-20 sm:pb-10 z-0">
+      <h1 class="purple text-center font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
         Technical Skills
       </h1>
-      <div data-aos="fade-up" className=" grid grid-cols-4 mb-5 sm:mb-9 ">
-        {mainSkillsImage.map((skill) => {
-          return <Circle key={skill.id} img={skill.image} />;
-        })}
-      </div>
-      <div
+      <Marquee
         data-aos="fade-up"
-        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3  "
+        speed={80}
+        gradientWidth={50}
+        pauseOnHover={true}
+        className=" w-full h-20 sm:h-24 "
       >
-        {skillsImage.map((skill) => {
+        {skillsImage.map((img) => {
           return (
-            <SkillCard key={skill.id} img={skill.image} name={skill.name} />
+            <div
+              key={img.id}
+              className=" w-12 sm:w-16  flex items-center  hover:-translate-y-2 transition ease-in duration-200 mx-5 "
+            >
+              <img className=" w-full" src={img.image} alt="" />
+            </div>
           );
         })}
-      </div>
+      </Marquee>
     </div>
   );
 }

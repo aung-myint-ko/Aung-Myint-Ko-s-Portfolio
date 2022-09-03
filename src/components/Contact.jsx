@@ -1,40 +1,49 @@
 import React from "react";
-
+import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 function Contact(props) {
   return (
     <div
       id="contact"
-      className=" bg_purple w-full  pt-5 pb-16 sm:py-10 overflow-y-hidden"
+      className=" bg-purple-100  w-full pt-10 pb-28  sm:py-5 overflow-y-hidden"
     >
-      <h1
-        data-aos="fade-up"
-        className="text-white text-center font-semibold text-3xl lg:text-4xl mb-2 sm-mb-4"
-      >
-        Contact
+      <h1 className=" sm:hidden text-center font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
+        Contact Me
       </h1>
-      <p
-        data-aos="fade-up"
-        className="text-center text-xs md:text-lg text-white mb-2 sm-mb-4"
-      >
-        <i className="fa-regular fa-envelope"></i> - aungmyintko96@gmail.com
-      </p>
-      <div data-aos="fade-up" className="text-white text-center mb-3">
-        <a href="https://www.facebook.com/aung.m.anarmala">
-          <i className="fa-brands fa-facebook-f mx-2 md:mx-4 icon"></i>
+      <div className="  flex justify-center items-center flex-row sm:flex-col mb-5 sm:mb-0 gap-7 sm:fixed bottom-0 left-6">
+        <a href="mailto:aungmyintko96@gmail.com" target={"_blank"}>
+          <MdEmail
+            color={"black"}
+            className="hover:fill-violet-900 duration-100"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/aung-myint-ko-1872b0241/">
-          <i className="fa-brands fa-linkedin-in mx-2 md:mx-4 icon"></i>
+        <a href="https://www.facebook.com/aung.m.anarmala" target={"_blank"}>
+          <BsFacebook
+            color={"black"}
+            className="hover:fill-violet-900 duration-100"
+          />
         </a>
-        <a href="https://github.com/aung-myint-ko">
-          <i className="fa-brands fa-github mx-2 md:mx-4 icon"></i>
+        <a
+          href="https://www.linkedin.com/in/aung-myint-ko-1872b0241/"
+          target={"_blank"}
+        >
+          <BsLinkedin
+            color={"black"}
+            className="hover:fill-violet-900 duration-100"
+          />
         </a>
+        <a href="https://github.com/aung-myint-ko" target={"_blank"}>
+          <BsGithub
+            color={"black"}
+            className="hover:fill-violet-900 duration-100"
+          />
+        </a>
+        <div className=" hidden sm:block bg_purple w-1 h-28"></div>
       </div>
-      <p
-        data-aos="fade-up"
-        className="text-xs text-center text-gray-500 font-sans"
-      >
-        Thank You
-      </p>
+      <h5 className="text-lg font-semibold text-center font-sans">
+        Created by Lucifer 96
+      </h5>
+      <p className="text-sm text-center text-gray-500 font-sans">Thank You</p>
     </div>
   );
 }

@@ -15,6 +15,7 @@ const ProjectsData = [
     id: 1,
     image: "/images/project1.png",
     title: "Tan Tock Seng Hospital",
+    desc: `This is my first React website. In this website, I used Reactjs, TailwindCSS. For state management, contextAPI had been useen`,
     icons: ["/images/react.png", "/images/tailwindcss.png"],
     url: "https://tan-tock-seng-hospital.vercel.app/",
   },
@@ -22,6 +23,7 @@ const ProjectsData = [
     id: 2,
     image: "/images/project2.png",
     title: "CrossFit Club Gym",
+    desc: `This is the project that I used UI layout from Youtube and developed by myself. At that time, I was beginner stage so It was quite challenging to apply grid and animation. In this project, I used HTML, CSS, Vanilla Javascript and Bootstarp`,
     icons: [
       "/images/html-5.png",
       "/images/css.png",
@@ -35,6 +37,7 @@ const ProjectsData = [
     id: 3,
     image: "/images/project3.png",
     title: "Artisan Bakery",
+    desc: `A static bakery website. In there, you can see recipes and read some review. I've used html, css, bootstarp for stylling and used vanilla javascript for some dynamic features `,
     icons: [
       "/images/html-5.png",
       "/images/css.png",
@@ -48,11 +51,12 @@ const ProjectsData = [
     id: 4,
     image: "/images/project4.png",
     title: "Los Pollos Fast Food",
+    desc: `A food ordering website develop with next.js. In this, you can order the food, increase and decrease food quantity as usual we do in ecommerce app. After add your food to the cart, click the "Pay Now" button to complete the payment process. Then customer info form will appear and type your name and some number in respective field.`,
     icons: [
       "/images/nextjs.png",
       "/images/sanity.png",
       "/images/tailwindcss.png",
-      "/images/redux.jpeg",
+      "/images/redux.png",
     ],
 
     url: "https://los-pollos.vercel.app/",
@@ -61,12 +65,9 @@ const ProjectsData = [
 
 function Project(props) {
   return (
-    <div id="projects" className="pb-16 sm:pb-36">
+    <div id="projects" className=" pt-8 sm:pt-20 pb-16 sm:pb-[120px]">
       <div className=" px-4 sm:px-16 md:px-24 overflow-y-hidden">
-        <h1
-          data-aos="fade-up"
-          className="purple font-semibold text-3xl lg:text-4xl mb-2 sm:mb-4"
-        >
+        <h1 className="purple font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
           Projects
         </h1>
         <p
@@ -74,11 +75,12 @@ function Project(props) {
           className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6"
         >
           These are the projects that I built them on my own. UI/UX and web
-          layout in these projects were <br /> inspired from some creators. I
-          give credits to them all.
+          layout in these projects were inspired from some creators. I give
+          credits to them all.
         </p>
       </div>
-      <div data-aos="fade-up" className="px-0 sm:px-14 lg:px-24">
+      {/* slider for desktop views */}
+      <div className="hidden sm:block px-0 sm:px-14 lg:px-24">
         <Swiper
           navigation={true}
           pagination={{
@@ -90,19 +92,37 @@ function Project(props) {
           {ProjectsData.map((project) => {
             return (
               <SwiperSlide key={project.id}>
-                <div className="mx-7 md:mx-10">
+                <div className="mx-4 md:mx-10">
                   <ProjectCard
                     id={project.id}
                     title={project.title}
                     img={project.image}
                     icons={project.icons}
                     url={project.url}
+                    desc={project.desc}
                   />
                 </div>
               </SwiperSlide>
             );
           })}
         </Swiper>
+      </div>
+      {/* for mobile views */}
+      <div className=" flex flex-col gap-y-8 sm:hidden px-0 sm:px-14 lg:px-24">
+        {ProjectsData.map((project) => {
+          return (
+            <div key={project.id} className="mx-4 md:mx-10">
+              <ProjectCard
+                id={project.id}
+                title={project.title}
+                img={project.image}
+                icons={project.icons}
+                url={project.url}
+                desc={project.desc}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
