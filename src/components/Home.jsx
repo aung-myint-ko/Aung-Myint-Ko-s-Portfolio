@@ -10,7 +10,7 @@ function Home() {
       <div className="max-w-xs lg:max-w-sm mx-auto z-10">
         <img
           className="vector w-full h-full  "
-          src="/images/untitled.png"
+          src="/images/vector2.png"
           alt=""
         />
       </div>
