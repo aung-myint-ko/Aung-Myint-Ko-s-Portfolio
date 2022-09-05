@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const skillsImage = [
   { id: 3, image: "/images/javascript.png", title: "Javascript" },
@@ -36,7 +37,7 @@ function TechnicalSkill() {
               key={img.id}
               className=" w-12 sm:w-16  flex items-center  hover:-translate-y-2 transition ease-in duration-200 mx-5 "
             >
-              <img className=" w-full" src={img.image} alt="" />
+              <LazyLoadImage className=" w-full" src={img.image} alt="" />
             </div>
           );
         })}

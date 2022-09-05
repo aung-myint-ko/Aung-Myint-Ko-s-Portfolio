@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, animateScroll as Scroll } from "react-scroll";
 import { CgProfile, CgHomeAlt, CgWebsite } from "react-icons/cg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Header() {
   const HandleClick = () => {
@@ -17,7 +18,7 @@ function Header() {
           className="logo w-14 h-14 sm:w-16 sm:h-16 cursor-pointer"
           onClick={HandleClick}
         >
-          <img src="/images/Logo.png" alt="" />
+          <LazyLoadImage src="/images/Logo.png" alt="" />
         </div>
 
         <ul className="navs p-4 shadow sm:static sm:w-fit sm:flex sm:shadow-none z-10">
@@ -63,25 +64,25 @@ function Header() {
           onClick={HandleClick}
         >
           <h1 className="text-3xl font-bold tracking-widest	">L96</h1>
-          <img className="w-14 h-14 " src="/images/Logo.png" alt="" />
+          <LazyLoadImage className="w-14 h-14 " src="/images/Logo.png" alt="" />
         </div>
-        <ul className=" p-3 shadow border-t fixed bottom-0 left-1/2 -translate-x-1/2 w-full bg-purple-50 rounded-md z-50 grid grid-cols-3">
+        <ul className=" p-2 shadow border-t fixed bottom-0 left-1/2 -translate-x-1/2 w-full bg-purple-50 rounded-md z-50 grid grid-cols-3">
           <li className="flex justify-center link">
             <Link to="home" spy={true} offset={-73}>
-              <CgHomeAlt size={22} className={"mx-auto"} />
+              <CgHomeAlt size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold text-center">Home</p>
             </Link>
           </li>
           <li className="flex justify-center link">
             <Link to="about" spy={true} offset={-73}>
-              <CgProfile size={22} className={"mx-auto"} />
+              <CgProfile size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold">About</p>
             </Link>
           </li>
 
           <li className="flex justify-center link">
             <Link to="projects" spy={true} offset={-73}>
-              <CgWebsite size={22} className={"mx-auto"} />
+              <CgWebsite size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold">Projects</p>
             </Link>
           </li>

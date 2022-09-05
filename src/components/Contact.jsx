@@ -5,12 +5,12 @@ function Contact(props) {
   return (
     <div
       id="contact"
-      className=" bg-purple-100  w-full pt-10 pb-28  sm:py-5 overflow-y-hidden"
+      className=" bg-purple-100  w-full pt-10 pb-[98px]  sm:py-5 overflow-y-hidden"
     >
       <h1 className=" sm:hidden text-center font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
         Contact Me
       </h1>
-      <div className="  flex justify-center items-center flex-row sm:flex-col mb-5 sm:mb-0 gap-7 sm:fixed bottom-0 left-6">
+      <div className="  flex justify-center items-center flex-row sm:flex-col mb-5 sm:mb-0 gap-7 sm:fixed bottom-0 left-5 md:left-[31px]">
         <a href="mailto:aungmyintko96@gmail.com" target={"_blank"}>
           <MdEmail
             color={"black"}

@@ -90,7 +90,7 @@ html {
 .swiper-pagination {
   bottom: 0px !important;
 }
-svg {
+#contact svg {
   height: 35px !important;
   width: 35px !important;
 }
@@ -119,9 +119,9 @@ svg {
   .swiper-button-next {
     right: 0 !important;
   }
-  svg {
-    height: 25px !important;
-    width: 25px !important;
+  #contact svg {
+    height: 23px !important;
+    width: 23px !important;
   }
 }
 
@@ -130,6 +130,10 @@ svg {
   .swiper-button-next::after {
     font-size: 20px !important;
     font-weight: bold !important;
+  }
+  #contact svg {
+    height: 25px !important;
+    width: 25px !important;
   }
 }
 

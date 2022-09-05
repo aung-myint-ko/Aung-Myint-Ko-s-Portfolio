@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Home() {
   return (
@@ -8,7 +9,7 @@ function Home() {
       className=" bg-slate-50 min-h-[760px] lg:min-h-[542px] px-4 sm:px-16 md:px-24 py-20 lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-20 lg:items-center overflow-hidden "
     >
       <div className="max-w-xs lg:max-w-sm mx-auto z-10">
-        <img
+        <LazyLoadImage
           className="vector w-full h-full  "
           src="/images/vector2.png"
           alt=""

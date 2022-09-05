@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FcGraduationCap } from "react-icons/fc";
 import { IoCalendar } from "react-icons/io5";
 
@@ -18,7 +19,7 @@ export function EduCard({ title, category, duration, img }) {
             {duration}
           </p>
         </div>
-        <img className="w-3/4 ml-auto " src={img} alt="" />
+        <LazyLoadImage className="w-3/4 ml-auto " src={img} alt="" />
       </div>
     </div>
   );
@@ -28,7 +29,7 @@ export function ProjectCard({ id, img, title, desc, icons, url }) {
   return (
     <div className=" project_card overflow-hidden sm:grid sm:grid-cols-1 md:grid-cols-2">
       <div className=" rounded-md overflow-hidden flex items-center">
-        <img data-aos="flip-left" src={img} alt="" />
+        <LazyLoadImage data-aos="flip-left" src={img} alt="" />
       </div>
       <div className="p-4 bg-purple-100 sm:bg-transparent shadow sm:shadow-none rounded-b-md sm:flex sm:flex-col sm:justify-center ">
         <h1
@@ -51,7 +52,7 @@ export function ProjectCard({ id, img, title, desc, icons, url }) {
             {icons.map((icon) => {
               return (
                 <li key={id} className=" w-fit h-5/6 overflow-hidden">
-                  <img className=" w-full h-full" src={icon} alt="" />
+                  <LazyLoadImage className=" w-full h-full" src={icon} alt="" />
                 </li>
               );
             })}

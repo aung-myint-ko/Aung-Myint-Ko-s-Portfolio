@@ -1,9 +1,14 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Loading() {
   return (
     <div className="flex justify-center items-center w-full h-screen bg-slate-50">
-      <img className=" w-24 animate-spin" src="/images/Logo.png" alt="" />
+      <LazyLoadImage
+        className=" w-24 animate-spin"
+        src="/images/Logo.png"
+        alt=""
+      />
       <h1 className=" text-5xl sm:text-6xl animate-pulse ">Loading</h1>
       {/* <div class="sk-circle">
         <div class="sk-circle1 sk-child"></div>

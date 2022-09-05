@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function About() {
   return (
@@ -11,7 +12,7 @@ function About() {
       </h1>
       <div className="  lg:flex lg:flex-row-reverse lg:items-center ">
         <div className=" w-4/5 md:w-3/6 overflow-hidden mx-auto lg:mx-0 mb-5 lg:mb-0">
-          <img
+          <LazyLoadImage
             data-aos="fade-left"
             className=" w-full h-full max-w-[280px] sm:max-w-xs mx-auto shadow-md rounded-md "
             src="/images/profile3.jpg"
