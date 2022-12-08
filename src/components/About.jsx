@@ -45,7 +45,7 @@ function About() {
             </p>
             <div data-aos="fade-up">
               <a
-                href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:93196cce-b721-4370-a63a-c0e35c338aa5"
+                href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:60e3fe8b-dd30-4f4b-b809-8fad29d1dbd9"
                 target={"_blank"}
                 className="button"
               >
