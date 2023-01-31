@@ -6,16 +6,16 @@ function Home() {
   return (
     <div
       id="home"
-      className=" bg-slate-50 min-h-[760px] lg:min-h-[542px] px-4 sm:px-16 md:px-24 pt-[70px] pb-[90px] lg:py-0 grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-x-20 lg:items-center overflow-hidden "
+      className=" bg-slate-50 min-h-[760px] lg:min-h-[542px] px-4 sm:px-16 md:px-24 pt-[40px] pb-[90px] lg:py-0 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:items-center overflow-hidden "
     >
-      <div className=" max-w-xs lg:max-w-sm  mx-auto z-10">
+      <div className=" max-w-xs lg:max-w-sm h-[300] mx-auto z-10">
         <LazyLoadImage
           className="vector w-full h-full  "
           src="/images/vector2.png"
           alt=""
         />
       </div>
-      <div>
+      <div className=" pt-5">
         <p
           data-aos="fade-up"
           className="mb-4 sm:mb-5 purple text-2xl sm:text-3xl font-black  "
