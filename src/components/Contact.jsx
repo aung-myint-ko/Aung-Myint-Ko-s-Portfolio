@@ -11,13 +11,21 @@ function Contact(props) {
         Contact Me
       </h1>
       <div className="  flex justify-center items-center flex-row sm:flex-col mb-5 sm:mb-0 gap-7 sm:fixed bottom-0 left-5 md:left-[31px]">
-        <a href="mailto:aungmyintko96@gmail.com" target={"_blank"}>
+        <a
+          href="mailto:aungmyintko96@gmail.com"
+          rel="noreferrer"
+          target={"_blank"}
+        >
           <MdEmail
             color={"black"}
             className="hover:fill-violet-900 duration-100"
           />
         </a>
-        <a href="https://www.facebook.com/aung.m.anarmala" target={"_blank"}>
+        <a
+          href="https://www.facebook.com/aung.m.anarmala"
+          rel="noreferrer"
+          target={"_blank"}
+        >
           <BsFacebook
             color={"black"}
             className="hover:fill-violet-900 duration-100"
@@ -25,6 +33,7 @@ function Contact(props) {
         </a>
         <a
           href="https://www.linkedin.com/in/aung-myint-ko-1872b0241/"
+          rel="noreferrer"
           target={"_blank"}
         >
           <BsLinkedin
@@ -32,7 +41,11 @@ function Contact(props) {
             className="hover:fill-violet-900 duration-100"
           />
         </a>
-        <a href="https://github.com/aung-myint-ko" target={"_blank"}>
+        <a
+          href="https://github.com/aung-myint-ko"
+          rel="noreferrer"
+          target={"_blank"}
+        >
           <BsGithub
             color={"black"}
             className="hover:fill-violet-900 duration-100"

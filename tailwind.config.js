@@ -2,11 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {
-      screens: {
-        lg: "940px",
-        // => @media (min-width: 992px) { ... }
-      },
+    screens: {
+      xs: "480px",
+      sm: "640px",
+      md: "770px",
+      lg: "976px",
+      xl: "1440px",
     },
   },
   plugins: [],

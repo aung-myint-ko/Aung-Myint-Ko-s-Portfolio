@@ -5,21 +5,27 @@ import { IoCalendar } from "react-icons/io5";
 
 export function EduCard({ title, category, duration, img }) {
   return (
-    <div className="w-full h-fit py-3 px-4 md:px-10 bg-purple-100 border rounded-lg shadow-md transition hover:-translate-y-2 hover:shadow-xl ease-in duration-200 ">
-      <h1 className=" mb-2 md:text-xl font-semibold text-black">{title}</h1>
+    <div className="w-full h-fit py-4 px-4 md:px-6 bg-purple-100 border rounded-lg shadow-md transition hover:-translate-y-2 hover:shadow-xl ease-in duration-200 ">
+      <h1 className=" mb-2 text-lg sm:text-xl font-semibold text-black">
+        {title}
+      </h1>
 
-      <div className="grid grid-cols-3 items-center">
-        <div className=" col-span-2 flex flex-col gap-y-2 ">
-          <h3 className="flex items-center">
+      <div className="flex justify-between items-center">
+        <div className=" flex flex-col gap-y-2 ">
+          <h3 className="sm:text-lg flex items-center opacity-90">
             <FcGraduationCap size={19} className="mr-3 opacity-70" />
             {category}
           </h3>
-          <p className="flex items-center text-sm opacity-90">
+          <p className="sm:text-lg flex items-center opacity-90">
             <IoCalendar size={19} className="mr-3 opacity-70" />
             {duration}
           </p>
         </div>
-        <LazyLoadImage className="w-3/4 ml-auto " src={img} alt="" />
+        <LazyLoadImage
+          className=" max-w-[70px] sm:max-w-[95px] ml-auto "
+          src={img}
+          alt=""
+        />
       </div>
     </div>
   );
@@ -61,6 +67,7 @@ export function ProjectCard({ id, img, title, desc, icons, url }) {
             <a
               className=" mx-auto sm:mx-0 flex justify-center items-center w-20 h-8 sm:w-16 sm:h-7 lg:w-20 lg:h-10 sm:text-sm lg:text-base bg-blue-700 hover:bg-blue-600 text-white rounded"
               href={url}
+              rel="noreferrer"
               target={"_blank"}
             >
               See

@@ -16,7 +16,7 @@ function About() {
             data-aos="fade-left"
             className=" w-full h-full max-w-[280px] sm:max-w-xs mx-auto shadow-md rounded-md "
             src="/images/profile3.jpg"
-            alt=""
+            alt="developer-avater"
           />
         </div>
         <div className="lg:w-3/6">
@@ -47,6 +47,7 @@ function About() {
               <a
                 href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:60e3fe8b-dd30-4f4b-b809-8fad29d1dbd9"
                 target={"_blank"}
+                rel="noreferrer"
                 className="button"
               >
                 Download Resume

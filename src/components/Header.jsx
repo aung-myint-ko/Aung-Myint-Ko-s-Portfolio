@@ -18,7 +18,7 @@ function Header() {
           className="logo w-14 h-14 sm:w-16 sm:h-16 cursor-pointer"
           onClick={HandleClick}
         >
-          <LazyLoadImage src="/images/Logo.png" alt="" />
+          <LazyLoadImage src="/images/Logo.png" alt="logo" />
         </div>
 
         <ul className="navs p-4 shadow sm:static sm:w-fit sm:flex sm:shadow-none z-10">
@@ -56,7 +56,7 @@ function Header() {
           </Link>
         </ul>
       </div>
-
+      {/* mobile screen */}
       <div className=" sm:hidden sticky  top-0 left-0 z-50">
         <div
           id="nav"

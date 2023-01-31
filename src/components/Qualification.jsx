@@ -7,7 +7,7 @@ function Qualification(props) {
       <h1 className="purple text-center sm:text-start font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
         Education
       </h1>
-      <div className=" gap-y-10 grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
+      <div className=" gap-y-8 grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
         <div data-aos="fade-up" data-aos-delay="200">
           <EduCard
             title={"University of Computer Studies, Yangon"}

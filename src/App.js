@@ -6,14 +6,13 @@ import Home from "./components/Home";
 import Project from "./components/Project";
 import Qualification from "./components/Qualification";
 import TechnicalSkill from "./components/TechnicalSkill";
-import { BrowserRouter as Router } from "react-router-dom";
 import Loading from "./components/Loading";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect, useState } from "react";
 // ..
-AOS.init({ duration: 1300, offset: 30 });
+AOS.init({ duration: 1300, offset: 30, once: true });
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
