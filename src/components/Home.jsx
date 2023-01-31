@@ -15,17 +15,17 @@ function Home() {
           alt=""
         />
       </div>
-      <div className=" pt-5">
+      <div className="pt-5">
         <p
           data-aos="fade-up"
-          className="mb-4 sm:mb-5 purple text-2xl sm:text-3xl font-black  "
+          className="mb-2 sm:mb-5 purple text-2xl sm:text-3xl font-black  "
         >
           Hello, I'm
         </p>
         <h1
           data-aos="fade-up"
           data-aos-delay="50"
-          className=" mb-4 sm:mb-5 text-4xl sm:text-5xl font-extrabold"
+          className=" mb-2 sm:mb-5 text-4xl sm:text-5xl font-extrabold"
         >
           Aung Myint Ko
         </h1>
