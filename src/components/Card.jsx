@@ -33,28 +33,23 @@ export function EduCard({ title, category, duration, img }) {
 
 export function ProjectCard({ id, img, title, desc, icons, url }) {
   return (
-    <div className=" project_card overflow-hidden sm:grid sm:grid-cols-1 md:grid-cols-2">
-      <div className=" rounded-md overflow-hidden flex items-center">
-        <LazyLoadImage data-aos="flip-left" src={img} alt="" />
+    <div className=" project_card grid grid-cols-1 md:grid-cols-2">
+      <div className=" rounded-md flex items-center justify-center min-h-[200px] md:min-h-[300px] ">
+        <LazyLoadImage
+          src={img}
+          alt={title}
+          className=" w-full max-w-md h-full md:h-[80%] bg-purple-100 "
+        />
       </div>
-      <div className="p-4 bg-purple-100 sm:bg-transparent shadow sm:shadow-none rounded-b-md sm:flex sm:flex-col sm:justify-center ">
-        <h1
-          data-aos="fade-up"
-          className="text-center sm:text-left text-lg sm:text-2xl font-semibold mb-2"
-        >
+      <div className="p-4 bg-purple-100 md:bg-transparent shadow md:shadow-none rounded-md md:rounded-none md:flex md:flex-col md:justify-center ">
+        <h1 className="text-center md:text-left text-lg md:text-2xl font-semibold mb-2">
           {title}
         </h1>
-        <p
-          data-aos="fade-up"
-          className=" tracking-wide leading-relaxed text-xs sm:text-sm mb-1 sm:mb-2 "
-        >
+        <p className=" tracking-wide leading-relaxed text-xs md:text-sm mb-1 md:mb-2 ">
           {desc}
         </p>
-        <div className="flex flex-col gap-y-2 sm:gap-y-0 sm:flex-row">
-          <ul
-            data-aos="fade-up"
-            className=" gap-x-2 my-1 flex items-center w-full h-10 justify-center sm:justify-start  "
-          >
+        <div className="flex flex-col gap-y-2 lg:gap-y-0 lg:flex-row">
+          <ul className=" gap-x-2 my-1 flex items-center w-full h-10 justify-center md:justify-start  ">
             {icons.map((icon) => {
               return (
                 <li key={id} className=" w-fit h-5/6 overflow-hidden">
@@ -63,9 +58,9 @@ export function ProjectCard({ id, img, title, desc, icons, url }) {
               );
             })}
           </ul>
-          <div data-aos="fade-up">
+          <div>
             <a
-              className=" mx-auto sm:mx-0 flex justify-center items-center w-20 h-8 sm:w-16 sm:h-7 lg:w-20 lg:h-10 sm:text-sm lg:text-base bg-blue-700 hover:bg-blue-600 text-white rounded"
+              className=" mx-auto md:mx-0 flex justify-center items-center w-20 h-8 md:w-20 md:h-10 md:text-sm lg:text-base bg-blue-700 hover:bg-blue-600 text-white rounded"
               href={url}
               rel="noreferrer"
               target={"_blank"}
