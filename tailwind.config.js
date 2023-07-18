@@ -9,6 +9,11 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    extend: {
+      fontFamily: {
+        monsat: ["Montserrat", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

@@ -8,7 +8,7 @@ function Qualification(props) {
         Education
       </h1>
       <div className=" gap-y-8 grid grid-cols-1 md:grid-cols-2 md:gap-x-4">
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <EduCard
             title={"University of Computer Studies, Yangon"}
             category={"Computer Science"}
@@ -16,7 +16,7 @@ function Qualification(props) {
             img={"/images/ucsy.png"}
           />
         </div>
-        <div data-aos="fade-up" data-aos-delay="400">
+        <div>
           <EduCard
             title={"Youth Carrier Institute"}
             category={"Frontend Web Development"}

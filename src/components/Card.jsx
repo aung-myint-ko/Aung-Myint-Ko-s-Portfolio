@@ -33,12 +33,12 @@ export function EduCard({ title, category, duration, img }) {
 
 export function ProjectCard({ id, img, title, desc, icons, url }) {
   return (
-    <div className=" project_card grid grid-cols-1 md:grid-cols-2">
+    <div className=" project_card gap-y-2 grid grid-cols-1 md:grid-cols-2">
       <div className=" rounded-md flex items-center justify-center min-h-[200px] md:min-h-[300px] ">
         <LazyLoadImage
           src={img}
           alt={title}
-          className=" w-full max-w-md h-full md:h-[80%] bg-purple-100 "
+          className=" w-full max-w-md h-full md:h-[80%] bg-slate-100 "
         />
       </div>
       <div className="p-4 bg-purple-100 md:bg-transparent shadow md:shadow-none rounded-md md:rounded-none md:flex md:flex-col md:justify-center ">

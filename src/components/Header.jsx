@@ -1,6 +1,10 @@
 import React from "react";
 import { Link, animateScroll as Scroll } from "react-scroll";
-import { CgProfile, CgHomeAlt, CgWebsite } from "react-icons/cg";
+import {
+  HiOutlineHome,
+  HiOutlineUserCircle,
+  HiOutlineViewGrid,
+} from "react-icons/hi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Header() {
@@ -69,20 +73,20 @@ function Header() {
         <ul className=" p-2 shadow border-t fixed bottom-0 left-1/2 -translate-x-1/2 w-full bg-purple-50 rounded-md z-50 grid grid-cols-3">
           <li className="flex justify-center link">
             <Link to="home" spy={true} offset={-73}>
-              <CgHomeAlt size={25} className={"mx-auto"} />
+              <HiOutlineHome size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold text-center">Home</p>
             </Link>
           </li>
           <li className="flex justify-center link">
             <Link to="about" spy={true} offset={-73}>
-              <CgProfile size={25} className={"mx-auto"} />
+              <HiOutlineUserCircle size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold">About</p>
             </Link>
           </li>
 
           <li className="flex justify-center link">
             <Link to="projects" spy={true} offset={-73}>
-              <CgWebsite size={25} className={"mx-auto"} />
+              <HiOutlineViewGrid size={25} className={"mx-auto"} />
               <p className="text-xs font-semibold">Projects</p>
             </Link>
           </li>

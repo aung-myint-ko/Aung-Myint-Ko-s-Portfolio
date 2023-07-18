@@ -16,27 +16,16 @@ function Home() {
         />
       </div>
       <div className="pt-5">
-        <p
-          data-aos="fade-up"
-          className="mb-2 sm:mb-5 purple text-2xl sm:text-3xl font-black  "
-        >
+        <p className="mb-2 sm:mb-5 purple text-2xl sm:text-3xl font-black  ">
           Hello, I'm
         </p>
-        <h1
-          data-aos="fade-up"
-          data-aos-delay="50"
-          className=" mb-2 sm:mb-5 text-4xl sm:text-5xl font-extrabold"
-        >
+        <h1 className=" mb-2 sm:mb-5 text-4xl sm:text-5xl font-extrabold">
           Aung Myint Ko
         </h1>
-        <p
-          data-aos="fade-up"
-          data-aos-delay="100"
-          className=" mb-7 sm:mb-8 text-lg sm:text-2xl "
-        >
+        <p className=" mb-7 sm:mb-8 text-lg sm:text-2xl ">
           Frontend Web Developer, <br /> Based in Myanmar
         </p>
-        <div data-aos="fade-up" data-aos-delay="150">
+        <div>
           <Link
             to="about"
             spy={true}

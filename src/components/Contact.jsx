@@ -1,7 +1,7 @@
 import React from "react";
-import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-function Contact(props) {
+import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+function Contact() {
   return (
     <div
       id="contact"
@@ -16,7 +16,7 @@ function Contact(props) {
           rel="noreferrer"
           target={"_blank"}
         >
-          <MdEmail
+          <IoMdMail
             color={"black"}
             className="hover:fill-violet-900 duration-100"
           />
@@ -26,7 +26,7 @@ function Contact(props) {
           rel="noreferrer"
           target={"_blank"}
         >
-          <BsFacebook
+          <FaFacebook
             color={"black"}
             className="hover:fill-violet-900 duration-100"
           />
@@ -36,7 +36,7 @@ function Contact(props) {
           rel="noreferrer"
           target={"_blank"}
         >
-          <BsLinkedin
+          <FaLinkedin
             color={"black"}
             className="hover:fill-violet-900 duration-100"
           />
@@ -46,17 +46,17 @@ function Contact(props) {
           rel="noreferrer"
           target={"_blank"}
         >
-          <BsGithub
+          <FaGithub
             color={"black"}
             className="hover:fill-violet-900 duration-100"
           />
         </a>
         <div className=" hidden sm:block bg_purple w-1 h-28"></div>
       </div>
-      <h5 className="text-lg font-semibold text-center font-sans">
+      <h5 className="text-lg font-medium md:font-semibold text-gray-700 text-center  mb-1">
         Created by Lucifer 96
       </h5>
-      <p className="text-sm text-center text-gray-500 font-sans">Thank You</p>
+      <p className="text-sm text-center text-gray-500">Thank You</p>
     </div>
   );
 }
