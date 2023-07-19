@@ -61,6 +61,7 @@ function Header() {
           </Link>
         </ul>
       </div>
+
       {/* mobile screen */}
       <div className=" sm:hidden sticky  top-0 left-0 z-50">
         <div
@@ -69,7 +70,7 @@ function Header() {
           onClick={HandleClick}
         >
           <h1 className="text-3xl font-bold tracking-widest	">L96</h1>
-          <LazyLoadImage className="w-14 h-14 " src="/images/Logo.png" alt="" />
+          <LazyLoadImage className="w-14 h-14 " src={Logo} alt="logo" />
         </div>
         <ul className=" p-2 shadow border-t fixed bottom-0 left-1/2 -translate-x-1/2 w-full bg-purple-50 rounded-md z-50 grid grid-cols-3">
           <li className="flex justify-center link">
