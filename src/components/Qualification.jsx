@@ -1,5 +1,7 @@
 import React from "react";
 import { EduCard } from "./Card";
+import UCSY from "../assets/ucsy.png";
+import YCI from "../assets/yci.png";
 
 function Qualification(props) {
   return (
@@ -13,7 +15,7 @@ function Qualification(props) {
             title={"University of Computer Studies, Yangon"}
             category={"Computer Science"}
             duration={`2019 - (currently stop)`}
-            img={"/images/ucsy.png"}
+            img={UCSY}
           />
         </div>
         <div>
@@ -21,7 +23,7 @@ function Qualification(props) {
             title={"Youth Carrier Institute"}
             category={"Frontend Web Development"}
             duration={`Sept, 2021 - Dec, 2021`}
-            img={"/images/yci.png"}
+            img={YCI}
           />
         </div>
       </div>

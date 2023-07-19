@@ -18,10 +18,7 @@ function Project() {
         <h1 className="purple font-black  text-2xl sm:text-4xl mb-5 sm:mb-9">
           Projects
         </h1>
-        <p
-          data-aos="fade-up"
-          className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6"
-        >
+        <p className="text-sm sm:text-base lg:text-lg mb-4 sm:mb-6">
           These are the projects that I built them on my own. Some parts of
           UI/UX and web layout in these projects were inspired from some
           creators. I give credits to them all.

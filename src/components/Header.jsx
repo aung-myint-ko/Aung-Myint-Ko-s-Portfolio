@@ -6,6 +6,7 @@ import {
   HiOutlineViewGrid,
 } from "react-icons/hi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Logo from "../assets/logo.png";
 
 function Header() {
   const HandleClick = () => {
@@ -22,7 +23,7 @@ function Header() {
           className="logo w-14 h-14 sm:w-16 sm:h-16 cursor-pointer"
           onClick={HandleClick}
         >
-          <LazyLoadImage src="/images/Logo.png" alt="logo" />
+          <LazyLoadImage src={Logo} alt="logo" />
         </div>
 
         <ul className="navs p-4 shadow sm:static sm:w-fit sm:flex sm:shadow-none z-10">

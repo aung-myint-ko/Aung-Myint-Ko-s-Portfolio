@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import DeveloperVector from "../assets/vector2.png";
 
 function Home() {
   return (
@@ -11,8 +12,8 @@ function Home() {
       <div className=" max-w-xs lg:max-w-sm h-[300] mx-auto z-10">
         <LazyLoadImage
           className="vector w-full h-full  "
-          src="/images/vector2.png"
-          alt=""
+          src={DeveloperVector}
+          alt="developer-vector"
         />
       </div>
       <div className="pt-5">
